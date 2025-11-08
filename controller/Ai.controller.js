@@ -41,7 +41,7 @@ Output must be valid JSON. No commentary, no markdown, no extra text.
 
     // Gemini API request
     const response = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCgFZLmDn_WgcBbHGMD2B-6nd-5x-OBS7g",
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.AI_KEY}`,
       {
         method: "POST",
         headers: {
